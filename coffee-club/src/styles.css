@@ -1,4 +1,17 @@
 /* General App Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6f4e37;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+.headerImage{
+    width: 100%;
+
+  }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,15 +21,6 @@ body {
   
   .app {
     text-align: center;
-    padding: 20px;
-  }
-  
-  /* Header Styles */
-  .header {
-    background-color: #6f4e37;
-    color: white;
-    padding: 15px;
-    margin-bottom: 20px;
   }
   
   /* Menu Styles */
@@ -71,3 +75,30 @@ body {
     font-size: 14px;
   }
   
+  .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 63px;
+  }
+  
+  .logo {
+    margin-top: -16px;
+    width: 17%;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+  }

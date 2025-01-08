@@ -2,12 +2,26 @@ import React from 'react'
 import './styles.css'
 import Menu from './components/Menu'
 import FeedbackForm from './components/FeedbackForm'
+import header from './assets/header.png'
+import logo from './assets/logo.png'
+
 
 const App = () => {
   return (
     <div className="app">
       <header className="header">
-        <h1>Coffee Club</h1>
+      <nav className="navbar">
+          <ul className="nav-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Beverages">Beverages</a></li>
+            <li className="nav-logo">
+              <img src={logo} alt="Logo" className="logo" />
+            </li>
+            <li><a href="#Food">Food</a></li>
+            <li><a href="#Company">Company</a></li>
+          </ul>
+        </nav> 
+      <img className="headerImage" src={header} alt="Coffee Club Logo" />
       </header>
       <main>
         <Menu />
