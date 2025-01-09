@@ -43,7 +43,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the nav-links horizontally */
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
     height: 60px;
@@ -53,13 +53,13 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    justify-content: center; /* Ensure links stay centered */
+    justify-content: center;
     list-style: none;
     gap: 15px;
     padding: 0;
     margin: 0;
     width: 100%;
-    max-width: 1200px; /* Prevent links from stretching beyond this width */
+    max-width: 1200px;
 }
 
 .nav-links.active {
@@ -72,7 +72,15 @@ body {
     width: 250px;
     background-color: rgba(0, 0, 0, 0.9);
     align-items: flex-start;
-    padding-top: 20px;
+    padding-top: 10px;
+    justify-content: flex-start;
+}
+
+.nav-links.active .nav-logo {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .nav-links li {
@@ -137,5 +145,10 @@ body {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .nav-links.active .nav-logo {
+        order: -1;
+        margin-bottom: 20px;
     }
 }
