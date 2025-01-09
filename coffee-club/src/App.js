@@ -8,12 +8,17 @@ import logo from './assets/logo.png'
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <div className="app">
+      {isMenuOpen && <div className="menu-backdrop" onClick={closeMenu}></div>}
       <header className="header">
         <nav className="navbar">
           <div className="menu-icon" onClick={toggleMenu}>
@@ -22,6 +27,8 @@ const App = () => {
             <span className="bar"></span>
           </div>
           <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          {isMenuOpen && <button className="close-btn" onClick={closeMenu}>&times;</button>}
+
             <li><a href="#Home">Home</a></li>
             <li><a href="#Beverages">Beverages</a></li>
             <li className="nav-logo">
