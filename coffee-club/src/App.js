@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './styles.css'
+import Locations from './components/Locations/Locations'
 import Menu from './components/Menu'
 import FeedbackForm from './components/FeedbackForm'
 import header from './assets/header.png'
@@ -46,6 +47,7 @@ const App = () => {
         <img className="headerImage" src={header} alt="Coffee Club Logo" />
       </header>
       <main>
+        <Locations/>
         <Menu />
         <FeedbackForm />
       </main>
