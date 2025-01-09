@@ -6,7 +6,8 @@ const Locations = () => {
   const locationDetails = [
     {
       city: 'Richmond, TX',
-      address: '4125 Williams Way Blvd, ste 140, Richmond, TX 77469',
+          //   address: '4125 Williams Way Blvd, ste 140, Richmond, TX 77469',
+      address: 'TBD',
       phone: '(510) 557-2129',
       email: 'coffeeclubandco@outlook.com',
       hours: 'Mon-Fri: 6am - 8pm, Sat-Sun: 8am - 10pm',
