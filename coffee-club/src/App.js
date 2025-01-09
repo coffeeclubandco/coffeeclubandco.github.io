@@ -1,17 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './styles.css'
 import Menu from './components/Menu'
 import FeedbackForm from './components/FeedbackForm'
 import header from './assets/header.png'
 import logo from './assets/logo.png'
 
-
 const App = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="app">
       <header className="header">
         <nav className="navbar">
-          <ul className="nav-links">
+          <div className="menu-icon" onClick={toggleMenu}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
+          <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
             <li><a href="#Home">Home</a></li>
             <li><a href="#Beverages">Beverages</a></li>
             <li className="nav-logo">
@@ -33,7 +43,7 @@ const App = () => {
         <FeedbackForm />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
