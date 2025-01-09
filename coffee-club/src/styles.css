@@ -1,4 +1,3 @@
-/* General App Styles */
 .header {
     display: flex;
     align-items: center;
@@ -6,99 +5,102 @@
     background-color: #6f4e37;
     width: 100%;
     box-sizing: border-box;
-  }
+}
 
-.headerImage{
+.headerImage {
     width: 100%;
+}
 
-  }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  .app {
+}
+
+.app {
     text-align: center;
-  }
-  
-  /* Menu Styles */
-  .menu {
-    margin-bottom: 20px;
-  }
-  
-  .menu ul {
-    list-style-type: none;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
     padding: 0;
-  }
-  
-  .menu li {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  /* Feedback Form Styles */
-  .feedback-form {
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-logo img {
+    height: 80px;
+    width: auto;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.feedback-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 400px;
     margin: 0 auto;
-  }
-  
-  .feedback-form input,
-  .feedback-form textarea {
+}
+
+.feedback-form input,
+.feedback-form textarea {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-  }
-  
-  .feedback-form button {
+}
+
+.feedback-form button {
     background-color: #6f4e37;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-  }
-  
-  .feedback-form button:hover {
+}
+
+.feedback-form button:hover {
     background-color: #563c2b;
-  }
-  
-  /* Status Message */
-  .feedback-form p {
+}
+
+.feedback-form p {
     margin-top: 10px;
     font-size: 14px;
-  }
-  
-  .navbar {
+}
+.header-text {
     position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 63px;
-  }
-  
-  .logo {
-    margin-top: -16px;
-    width: 17%;
-  }
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
+    /* top: 55%; */
+    left: 5%;
+    /* transform: translateY(-50%); */
     color: white;
-    font-size: 16px;
+    font-size: 20%;
     font-weight: bold;
-    padding: 5px 10px;
-  }
+    font-family: cursive;
+    text-align: left;
+    line-height: 0.1;
+}

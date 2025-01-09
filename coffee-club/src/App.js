@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="app">
       <header className="header">
-      <nav className="navbar">
+        <nav className="navbar">
           <ul className="nav-links">
             <li><a href="#Home">Home</a></li>
             <li><a href="#Beverages">Beverages</a></li>
@@ -21,7 +21,12 @@ const App = () => {
             <li><a href="#Company">Company</a></li>
           </ul>
         </nav> 
-      <img className="headerImage" src={header} alt="Coffee Club Logo" />
+        <div className="header-text">
+          <h1>Brewed</h1>
+          <h1>For</h1>
+          <h1>Friends</h1>
+        </div>
+        <img className="headerImage" src={header} alt="Coffee Club Logo" />
       </header>
       <main>
         <Menu />
